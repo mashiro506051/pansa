@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>問題4 | nazotoki</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(to bottom, #fff, #ffe8d8);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+    }
+
+    header {
+      width: 100%;
+      background-color: #aa5500;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 40px;
+      width: 90%;
+      max-width: 400px;
+    }
+
+    .quiz-image {
+      width: 100%;
+      max-width: 400px;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    input[type="text"] {
+      width: 100%;
+      max-width: 250px;
+      padding: 10px;
+      margin: 10px 0 15px;
+      border-radius: 8px;
+      border: 1px solid #aaa;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    button {
+      background-color: #ff6600;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    button:hover {
+      background-color: #cc5200;
+    }
+
+    .back-btn {
+      text-decoration: none;
+      color: #333;
+      background-color: #f0f0f0;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .back-btn:hover {
+      background-color: #ddd;
+    }
+  </style>
+
+  <script>
+    function checkAnswer() {
+      const answer = document.getElementById("answer").value.trim();
+      if (answer === "北千住駅" || answer === "きたせんじゅえき") {
+        alert("正解！ミッションへ進みます🍽️");
+        window.location.href = "mission4.html";
+      } else {
+        alert("残念！もう一度考えてみよう💭");
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>🧩 問題４</h1>
+  </header>
+
+  <main>
+    <p>次の画像の空欄を埋めて、駅を特定しなさい。</p>
+    <img src="images/北千住.png" alt="問題画像" class="quiz-image">
+
+    <input type="text" id="answer" placeholder="駅名を入力">
+    <button onclick="checkAnswer()">答える</button>
+
+    <a href="index.html" class="back-btn">🏠 ホームに戻る</a>
+  </main>
+</body>
+</html>

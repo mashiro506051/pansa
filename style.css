@@ -1,0 +1,149 @@
+body {
+  font-family: "Segoe UI", "Hiragino Kaku Gothic ProN", sans-serif;
+  text-align: center;
+  background: linear-gradient(to bottom, #f0f8ff, #ffffff);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background-color: #89c4f4;
+  color: white;
+  padding: 15px;
+  font-size: 1.2em;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.horse {
+  width: 60%;
+  max-width: 250px;
+  margin: 30px auto 10px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.intro {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.menu button {
+  display: block;
+  width: 80%;
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  background-color: #4b8df8;
+  color: white;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.menu button:hover {
+  background-color: #357ae8;
+  transform: scale(1.05);
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 0.9em;
+  color: #777;
+}
+
+/* スマホ対応 */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.3em;
+  }
+
+  .intro {
+    font-size: 1em;
+  }
+
+  .menu button {
+    font-size: 1em;
+    padding: 12px;
+  }
+}
+
+.music-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.music-btn {
+  background-color: #ffb6c1;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: all 0.3s;
+}
+
+.music-btn:hover {
+  background-color: #ff91a4;
+  transform: scale(1.05);
+}
+
+.music-horse {
+  width: 160px;
+  margin-top: 40px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.present-hint img.present-icon {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.present-hint {
+  font-size: 2.0rem;      /* 文字サイズを大きく */
+  text-align: center;      /* 中央揃え */
+  margin-top: 50px;
+  line-height: 2.2rem;    /* 行間を広く */
+}
+
+.present-hint img.present-icon {
+  width: 100px;             /* 画像を大きく */
+  height: 100px;
+  vertical-align: middle;
+  margin-right: 15px;      /* 文字との間隔を広めに */
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 40px;
+  font-size: 1.5rem;       /* ボタン文字も大きく */
+  text-decoration: none;
+  color: #fff;
+  background-color: #ff91a4;
+  padding: 12px 25px;
+  border-radius: 25px;
+}
+
+.back-btn:hover {
+  background-color: #ff6699;
+}
+

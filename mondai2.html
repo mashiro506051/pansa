@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>問題2 | パンサラッサと消えたプレゼント</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function checkAnswer() {
+      const answer = document.getElementById("answer").value.trim();
+      if (answer === "秋葉原駅" || answer === "あきはばらえき") {
+        alert("正解！ミッションへ進みます🍜");
+        window.location.href = "mission2.html";
+      } else {
+        alert("残念！もう一度考えてみよう💭");
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>🧩 問題２</h1>
+  </header>
+
+  <main>
+    <p>
+      「風邪治った」→「〇〇〇」→「散歩してくる」<br><br>
+      〇〇〇に入る駅はどこ？
+    </p>
+
+    <input type="text" id="answer" placeholder="駅名を入力">
+    <button onclick="checkAnswer()">答える</button>
+
+    <a href="index.html" class="back-btn">🏠 ホームに戻る</a>
+  </main>
+</body>
+</html>
